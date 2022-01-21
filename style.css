@@ -10,13 +10,13 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border:none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all .2s linear;
 }
 
 *::selection{
     background:var(--yellow);
-    color:#333;
+    color:rgb(183, 135, 216);
 }
 
 html{
@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#111;
+    background:rgb(29, 29, 29);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -186,18 +186,19 @@ header .navbar ul li a:hover{
 .about .row .info{
     flex:1 1 48rem;
     padding:2rem 1rem;
-    padding-left: 6rem;
+    padding-left: 10rem;
+    text-align: center;
 }
 
 .about .row .info h3{
     font-size: 2rem;
-    color:var(--yellow);
-    padding:1rem 0;
+    color:rgb(247, 160, 60);
+    padding: 0.5rem 0;
     font-weight: normal;
 }
 
 .about .row .info h3 span{
-    color:#eee;
+    color:rgb(236, 138, 72);
     padding:0 .5rem;
 }
 
@@ -276,21 +277,15 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
-.portfolio .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
+.knowledge .box-container{
+  
 }
 
-.portfolio .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
+.Knowledge .box-container .box{
+    color: #f9ca24;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
 }
 
 .portfolio .box-container .box img{
@@ -301,6 +296,12 @@ header .navbar ul li a:hover{
 
 .portfolio .box-container .box:hover img{
     transform: scale(1.2);
+}
+.hobbies .box .line{
+    color: rgb(241, 162, 64);
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 3rem;
 }
 
 .contact .row{
@@ -362,7 +363,10 @@ header .navbar ul li a:hover{
     padding-right: 1rem;
     color:var(--yellow);
 }
-
+.contact .row .content .info a{
+    font-size: 2rem;
+    color: chocolate;
+}
 .top{
     position: fixed;
     bottom:7.5rem; right: 2rem;
@@ -456,4 +460,11 @@ header .navbar ul li a:hover{
         margin:3rem 0;
     }
 
+ }
+
+
+
+
+ #ppx{
+     border: 50%;
  }
